@@ -16,7 +16,7 @@ $$\large
 A^{(i)}_{n}=A^{(i-1)}_{n}\times(f\cdot E_{n}), \qquad E_{n} \text{ – единичная матрица порядка } n
 $$
 
-Принцип работы автомата сводится к применению отображения $f$ к каждому элементу $a^{(i-1)}_{ij}$  матрицы $A^{(i-1)}_{n}$
+Принцип работы автомата сводится к применению отображения $f$ к каждому элементу $$\large a_{ij}^{(i-1)}$$  матрицы $\large A_{n}^{(i-1)}$
 
 $$\large
 A^{(i-1)} =
@@ -51,15 +51,26 @@ $$
 $$\large S_{ij} \to v$$
 
 $$\large
-
 S_{ij} = \bigwedge_{k}\left( A[i_{k}, j_{k}] \ \theta \ v_{k} \right)
-
 $$
+
 Пояснение:
 - $\large \bigwedge_{k}$ – объединение по всем соседям и центру
-- $\large A[i_{k},j_{k}]$ – значение соседнего элемента $\left(\begin{matrix} \nwarrow & \uparrow & \nearrow \\ \leftarrow & & \rightarrow \\ \swarrow & \downarrow & \searrow \end{matrix}\right)$ или центра
+- $\large A[i_{k},j_{k}]$ – значение соседнего элемента
+
+$$
+\left(
+\begin{matrix} 
+\nwarrow & \uparrow & \nearrow \\ 
+\leftarrow & & \rightarrow \\ 
+\swarrow & \downarrow & \searrow
+\end{matrix}
+\right)
+$$ 
+
+или центра
 - $\large v_{k}$ – сравнимаемое значение из множества $\large T$
-- $\large \theta$ – операция сравнения $\large \theta \in \{ =, \neq, <, >, \leq, \geq \}$
+- $\large \theta$ – операция сравнения $\large \theta \in [ =, \neq, <, >, \leq, \geq ]$
 
 ## $\large \mathbb{III.}$ Интерфейс
 
